@@ -1,18 +1,4 @@
-//收藏本站
-function AddFavorite(title, url)
-{
-    try {
-        window.external.addFavorite(url, title);
-    }
-    catch (e) {
-        try {
-            window.sidebar.addPanel(title, url, "");
-        }
-        catch (e) {
-            alert("抱歉，您所使用的浏览器无法完成此操作。\n加入收藏失败，请使用 [ Ctrl+D ] 进行添加");
-        }
-    }
-}
+
 
 // 原始代码
 const confettiShower = [];
